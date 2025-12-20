@@ -1,8 +1,15 @@
 {
-  "label": "Tutorial - Basics",
-  "position": 2,
+  "label": "Module 1: Architecture of Embodiment",
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Docusaurus concepts."
+    "description": "Foundational principles of Physical AI and embodied intelligence. Learn the shift from digital to physical systems, humanoid platform specifications, and the simulation-first development paradigm.",
+    "slug": "/category/module-1"
+  },
+  "customProps": {
+    "hours": "140-170",
+    "difficulty": "Intermediate",
+    "prerequisites": ["Python", "Linux Basics", "Linear Algebra"],
+    "technologies": ["ROS 2", "Docker", "Gazebo", "Python", "OpenAI API"]
   }
 }
