@@ -3,8 +3,8 @@
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Foundational principles of Physical AI and embodied intelligence. Learn the shift from digital to physical systems, humanoid platform specifications, and the simulation-first development paradigm.",
-    "slug": "/category/module-1"
+    "slug": "/category/module-1",
+    "description": "Foundational principles of Physical AI and embodied intelligence. Learn the shift from digital to physical systems, humanoid platform specifications, and the simulation-first development paradigm."
   },
   "customProps": {
     "hours": "140-170",
