@@ -1,4 +1,7 @@
 /** @type {import('@docusaurus/types').Config} */
+
+const { themes: prismThemes } = require('prism-react-renderer');
+
 const config = {
   title: 'Physical AI & Humanoid Robotics',
   tagline: 'From Digital Intelligence to Embodied Machines',
@@ -25,12 +28,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/physical-ai-research/textbook/tree/main/',
+          editUrl:
+            'https://github.com/physical-ai-research/textbook/tree/main/',
           routeBasePath: '/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/physical-ai-research/textbook/tree/main/',
+          editUrl:
+            'https://github.com/physical-ai-research/textbook/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -55,7 +60,11 @@ const config = {
             position: 'left',
             label: 'Modules',
           },
-          {to: '/blog', label: 'Research Blog', position: 'left'},
+          {
+            to: '/blog',
+            label: 'Research Blog',
+            position: 'left',
+          },
           {
             href: 'https://github.com/physical-ai-research/textbook',
             label: 'GitHub',
@@ -63,6 +72,7 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
@@ -101,16 +111,18 @@ const config = {
               },
               {
                 label: 'Discussions',
-                href: 'https://github.com/physical-ai-research/textbook/discussions',
+                href:
+                  'https://github.com/physical-ai-research/textbook/discussions',
               },
             ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Physical AI Research Collective. Built with Docusaurus.`,
       },
+
       prism: {
-        theme: require('prism-react-renderer/themes/github'),
-        darkTheme: require('prism-react-renderer/themes/dracula'),
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
         additionalLanguages: ['docker', 'bash', 'yaml'],
       },
     }),
